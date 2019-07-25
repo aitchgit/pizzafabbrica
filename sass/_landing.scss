@@ -1,0 +1,209 @@
+.container {
+    background-image: url('../img/chalkbg.jpg');
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+.c-soon {
+    position: fixed;
+    right: -78px;
+    padding: 1.5rem 2.5rem;
+    background-color: #ac1f25;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: rotate(-90deg);
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.splash-hero {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;    
+    background-image: url('../img/splash-bg.png');
+    background-size: cover;
+    background-position: center;    
+    text-align: center;
+
+    &__container {
+        max-width: 140rem;
+    }
+
+    &__icon {
+        width: auto;
+        height: 215px;        
+    }
+
+    &__heading {
+        color: $color-grey-light-1;
+        font-family: $font-primary;
+        font-size: 7rem;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+    }
+
+    &__subheading {
+        color: $color-grey-light-2;
+        font-family: $font-display;
+        font-size: 1.8rem;
+        letter-spacing: 5px;
+    }
+    
+}
+
+.story {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 5rem;
+    padding: 5rem;
+    max-width: 140rem; 
+    margin: 0 auto;
+
+    &__video {
+        align-self: center;
+        justify-self: center;
+    }
+
+    &__info {
+        align-self: center;
+        justify-self: start;
+        padding: 10rem 5rem;
+        color: $color-grey-light-1;
+        max-width: 80rem;
+        
+        h2 {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+            color: $color-grey-light-2;
+        }
+    }
+}
+
+.culture {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 5rem;
+    padding: 5rem;
+    max-width: 140rem; 
+    margin: 0 auto;
+
+    &__image {
+        align-self: center;
+        justify-self: center;
+    }
+
+    &__info {
+        align-self: center;
+        justify-self: start;
+        padding: 10rem 5rem;
+        max-width: 80rem;
+        color: $color-grey-light-1;
+        
+        h2 {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+            color: $color-grey-light-2;
+        }
+    }
+}
+
+.aboutus {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    align-items: center;
+    justify-content: center; 
+    max-width: 140rem; 
+    margin: 10rem auto;
+    text-align: center;
+    color: $color-grey-light-1;
+
+    &__feature {
+        align-self: center;
+        justify-self: center;
+       
+
+        img {
+            margin-bottom: 2rem;
+        }
+
+        h4 {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $color-grey-light-1;
+        }
+    }
+
+    &__info {
+        grid-column: 1 / -1;
+        align-self: center;
+        justify-self: center;
+        max-width: 60rem;
+        padding: 15rem 0 5rem 0;
+
+        h4 {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+            color: $color-grey-light-2;
+        }
+    }
+}
+
+
+
+.footer {
+    background-color: #ac1f25;
+
+    &__container {
+        max-width: 140rem;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding: 5em 0;
+        align-items: center;
+        justify-content: center;
+
+        figure {
+            position: relative;
+
+            img {
+            width: auto;
+            height: 150px;  
+            position: absolute;
+            bottom: -40px;
+            left: -250px;
+            }
+
+        }
+
+        p {
+            font-size: 1.7rem;
+            color: $color-grey-light-1;
+            text-transform: uppercase;
+            
+        }
+    }
+}
